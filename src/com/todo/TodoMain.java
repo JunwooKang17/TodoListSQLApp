@@ -12,9 +12,11 @@ public class TodoMain {
 	
 		Scanner sc = new Scanner(System.in);
 		TodoList l = new TodoList();
+		TodoUtil.loadList(l,"todolist");
+		l.importData("todolist");
 		boolean isList = false;
 		boolean quit = false;
-		TodoUtil.loadList(l,"todolist");
+		
 		Menu.displaymenu();
 		
 		do {
